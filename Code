@@ -1,0 +1,4 @@
+select * from station;                                   // Displays all rows in station table.
+select count(city) as N from station;                    //counts all cities in station table
+select count(distinct (city))  as M from station;        //counts all cities in station table
+select count(city)-count(distinct (city)) from station;  //Subtracts N-M
